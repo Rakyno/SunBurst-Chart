@@ -1,0 +1,204 @@
+{
+  "name": "World Economy",
+  "children": [
+    {
+      "name": "Macroeconomic Indicators",
+      "children": [
+        {
+          "name": "GDP",
+          "children": [
+            { "name": "Nominal GDP", "value": 84600000 },
+            { "name": "GDP Growth Rate", "value": 3.1 },
+            { "name": "GDP Per Capita", "value": 10800 },
+            { "name": "GDP by Sector", "value": 0 }
+          ]
+        },
+        {
+          "name": "Inflation",
+          "children": [
+            { "name": "Consumer Price Index", "value": 5.2 },
+            { "name": "Core Inflation", "value": 4.1 },
+            { "name": "Producer Price Index", "value": 6.7 }
+          ]
+        },
+        {
+          "name": "Employment",
+          "children": [
+            { "name": "Unemployment Rate", "value": 4.9 },
+            { "name": "Labor Force Participation", "value": 62.3 },
+            { "name": "Average Weekly Hours", "value": 34.6 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trade",
+      "children": [
+        {
+          "name": "Exports",
+          "children": [
+            { "name": "Total Exports", "value": 24800000 },
+            { "name": "Goods Exports", "value": 16800000 },
+            { "name": "Services Exports", "value": 8000000 }
+          ]
+        },
+        {
+          "name": "Imports",
+          "children": [
+            { "name": "Total Imports", "value": 31200000 },
+            { "name": "Goods Imports", "value": 25400000 },
+            { "name": "Services Imports", "value": 5800000 }
+          ]
+        },
+        {
+          "name": "Balance",
+          "children": [
+            { "name": "Trade Balance", "value": -6400000 },
+            { "name": "Current Account Balance", "value": -4200000 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Financial Markets",
+      "children": [
+        {
+          "name": "Stock Markets",
+          "children": [
+            { "name": "S&P 500", "value": 4200 },
+            { "name": "NASDAQ", "value": 13000 },
+            { "name": "Dow Jones", "value": 34000 }
+          ]
+        },
+        {
+          "name": "Bond Markets",
+          "children": [
+            { "name": "10-Year Treasury Yield", "value": 3.5 },
+            { "name": "Corporate Bond Spread", "value": 1.8 }
+          ]
+        },
+        {
+          "name": "Currency",
+          "children": [
+            { "name": "USD Index", "value": 102.5 },
+            { "name": "EUR/USD", "value": 1.08 },
+            { "name": "USD/JPY", "value": 134.2 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sector Performance",
+      "children": [
+        {
+          "name": "Agriculture",
+          "children": [
+            { "name": "Crop Production", "value": 1800000 },
+            { "name": "Livestock", "value": 950000 }
+          ]
+        },
+        {
+          "name": "Industry",
+          "children": [
+            { "name": "Manufacturing", "value": 16800000 },
+            { "name": "Construction", "value": 9200000 },
+            { "name": "Mining", "value": 5400000 }
+          ]
+        },
+        {
+          "name": "Services",
+          "children": [
+            { "name": "Finance", "value": 12500000 },
+            { "name": "Healthcare", "value": 9800000 },
+            { "name": "Retail", "value": 7600000 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Government Finance",
+      "children": [
+        {
+          "name": "Revenue",
+          "children": [
+            { "name": "Tax Revenue", "value": 6800000 },
+            { "name": "Non-Tax Revenue", "value": 1200000 }
+          ]
+        },
+        {
+          "name": "Expenditure",
+          "children": [
+            { "name": "Social Programs", "value": 3200000 },
+            { "name": "Defense", "value": 2100000 },
+            { "name": "Infrastructure", "value": 1500000 }
+          ]
+        },
+        {
+          "name": "Debt",
+          "children": [
+            { "name": "Public Debt", "value": 34000000 },
+            { "name": "Debt-to-GDP Ratio", "value": 40.2 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Regional Economies",
+      "children": [
+        {
+          "name": "North America",
+          "children": [
+            { "name": "United States", "value": 25400000 },
+            { "name": "Canada", "value": 2100000 },
+            { "name": "Mexico", "value": 1400000 }
+          ]
+        },
+        {
+          "name": "Europe",
+          "children": [
+            { "name": "Germany", "value": 4300000 },
+            { "name": "France", "value": 3100000 },
+            { "name": "United Kingdom", "value": 3200000 }
+          ]
+        },
+        {
+          "name": "Asia",
+          "children": [
+            { "name": "China", "value": 18000000 },
+            { "name": "Japan", "value": 5100000 },
+            { "name": "India", "value": 3400000 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Economic Indicators",
+      "children": [
+        {
+          "name": "Consumer",
+          "children": [
+            { "name": "Consumer Confidence", "value": 108.5 },
+            { "name": "Retail Sales", "value": 4.2 },
+            { "name": "Personal Savings Rate", "value": 5.3 }
+          ]
+        },
+        {
+          "name": "Business",
+          "children": [
+            { "name": "PMI Manufacturing", "value": 52.4 },
+            { "name": "PMI Services", "value": 55.1 },
+            { "name": "Business Confidence", "value": 103.7 }
+          ]
+        },
+        {
+          "name": "Housing",
+          "children": [
+            { "name": "Housing Starts", "value": 1650000 },
+            { "name": "Home Prices", "value": 6.8 },
+            { "name": "Mortgage Rates", "value": 6.2 }
+          ]
+        }
+      ]
+    }
+  ]
+}
