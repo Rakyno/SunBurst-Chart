@@ -13,7 +13,7 @@ const App = () => {
           Interactive Sunburst Chart
         </h1>
       </div>
-      <div className="w-xl h-xl flex  flex-row items-center justify-center">
+      <div className=" flex  flex-row items-center justify-center">
         <SunburstCHART data={initaildata} />
       </div>
     </div>
