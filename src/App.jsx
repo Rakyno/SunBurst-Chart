@@ -1,11 +1,8 @@
-import React from "react";
-
 import SunburstCHART from "./components/SunBurstChart";
-import data from "./components/data.json";
+import initialdata from "./components/data.json";
+import SunburstManager from "./components/SunBustManager";
 
 const App = () => {
-  const initaildata = data;
-
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-6xl mx-auto">
@@ -13,8 +10,8 @@ const App = () => {
           Interactive Sunburst Chart
         </h1>
       </div>
-      <div className=" flex  flex-row items-center justify-center">
-        <SunburstCHART data={initaildata} />
+      <div className=" h-screen">
+        <SunburstManager dataset={initialdata} />
       </div>
     </div>
   );

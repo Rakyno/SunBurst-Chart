@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-const SunburstCHART = ({ data }) => {
+const SunburstCHART = ({ data, onSegmentClick }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -57,10 +57,21 @@ const SunburstCHART = ({ data }) => {
       .attr("pointer-events", (d) => (arcVisible(d.current) ? "auto" : "none"))
       .attr("d", (d) => arc(d.current));
 
-    path
-      .filter((d) => d.children)
-      .style("cursor", "pointer")
-      .on("click", clicked);
+    path.style("cursor", "pointer").on("click", function (event, d) {
+      event.stopPropagation();
+
+      // Always notify the manager of the selected node
+      const pathArray = d
+        .ancestors()
+        .reverse()
+        .map((n) => n.data.name);
+      if (onSegmentClick) {
+        onSegmentClick(pathArray);
+      }
+
+      // Zoom into this node
+      clicked(event, d);
+    });
 
     const format = d3.format(",d");
     path.append("title").text(
@@ -114,6 +125,15 @@ const SunburstCHART = ({ data }) => {
 
     function clicked(event, p) {
       parent.datum(p.parent || root);
+
+      // 👍 Also notify parent on zoom target
+      if (onSegmentClick) {
+        const pathArray = p
+          .ancestors()
+          .reverse()
+          .map((n) => n.data.name);
+        onSegmentClick(pathArray);
+      }
 
       root.each((d) => {
         d.target = {
